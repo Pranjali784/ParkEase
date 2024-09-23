@@ -1,0 +1,53 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Darker background for better contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background-color: #007bff; /* Blue background for the modal */
+    color: #ffffff; /* White text color */
+    padding: 20px;
+    border-radius: 8px; /* Slightly rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for a modern look */
+    width: 300px;
+     transition: transform 1s ease, opacity 0.3s ease;
+    max-width: 90vw; /* Responsive width for smaller screens */
+  }
+
+  .close-button {
+  background-color: #0056b3; /* Darker blue for the button */
+  color: #ffffff; /* White text color */
+  border: none;
+  border-radius: 8px; /* Slightly more rounded corners */
+  padding: 12px 18px; /* Increased padding for better touch target */
+  cursor: pointer;
+  margin-top: 15px;
+  text-align: center;
+  display: block;
+  font-size: 16px; /* Slightly larger font size for better readability */
+  font-weight: 600; /* Slightly bolder font for emphasis */
+  text-transform: uppercase; /* Uppercase text for a more distinct look */
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.close-button:hover {
+  background-color: #004494; /* Even darker blue on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+.close-button:focus {
+  outline: none; /* Remove default focus outline */
+  box-shadow: 0 0 0 3px rgba(0, 85, 179, 0.4); /* Focus ring with a subtle blue tint */
+}
+
+  

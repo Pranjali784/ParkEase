@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Hide both vertical and horizontal scrollbars */
+}
+
+.hero-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Hide overflow */
+  background: transparent; /* Ensure background is transparent to see Vanta effect */
+}
+
+.hero-title, .hero-subtitle, .hero-button {
+  position: relative;
+  margin-top:0px;
+  margin-left: 70px;
+  z-index: 1; /* Ensure text and button are above the Vanta effect */
+  color: white; /* Text color for visibility against the background */
+}
+
+.hero-title {
+  font-size: 6rem;
+  margin-top: 230px;
+  margin-left: 70px;
+}
+
+.hero-subtitle {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  margin-left: 70px;
+}
+
+.hero-button {
+  background-color: #444444;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1rem;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.hero-button:hover {
+  background-color: #000000;
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.button1 {
+  position: relative;
+  top: 200px;
+  bottom: 20px; /* Distance from the bottom */
+  left: 33%;
+  transform: translateX(-50%);
+  background-color: #444444; /* Adjust this color as needed */
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  z-index: 1; /* Ensures the button is on top of other elements */
+  transition: background-color 0.3s ease;
+}
+
+.button1:hover {
+  background-color: #d61212; /* Slightly darker color on hover */
+}
+
+/* General container styles */
+
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  bottom: 90px;
+  gap: 10px;
+  position: absolute;
+}
+
+/* Unique styles for each card */
+.cards .card-1,
+.cards .card-2,
+.cards .card-3 {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  position: absolute;
+  box-sizing: border-box; 
+  margin: 5px; 
+  border: 2px solid red; 
+}
+
+.cards .card-1 {
+  height: 500px;
+  width: 600px;
+  top: 150px;
+  left: 100px;
+}
+
+.cards .card-2 {
+  height: 500px;
+  width: 600px;
+  top: 700px;
+  left: 800px;
+}
+
+.cards .card-3 {
+  height: 500px;
+  width: 600px;
+  top: 1250px;
+  left: 100px;
+}
+
+.cards .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 400ms ease;
+}
+
+.cards .card:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.cards:hover > .card:not(:hover) {
+  filter: blur(5px);
+  transform: scale(0.9, 0.9);
+}
+
+.cards .card p.tip {
+  font-family: "Manrope", sans-serif;
+  position: absolute;
+  margin-bottom: 450px;
+  font-size: 2.3em;
+  font-weight: 300;
+}
+
+.cards .card p.second-text {
+  font-family: "Manrope", sans-serif;
+  font-size: 50px;
+  font-weight: 100;
+  position: absolute;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 50px;
+}
+
+.card-link {
+  position: absolute;
+  border: 1px solid red;
+  bottom: 10px;
+  border-radius: 5px;
+  color: #ff0000; 
+  text-decoration: none; 
+  font-size: 15px;
+  margin-top: 400px; 
+  display: inline-block; 
+  padding: 15px 20px; 
+  transition: color 300ms ease, transform 300ms ease; 
+}
+
+.card-link:hover {
+  color: #ffffff; 
+  transform: scale(1.05); 
+}
+
+

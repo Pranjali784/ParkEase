@@ -1,0 +1,55 @@
+@keyframes twinkle {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevent scrollbars */
+  height: 100%;
+}
+
+.background {
+  position: fixed;
+  width: 100vw;
+  height: 100vh; /* Full viewport height */
+  top: 0;
+  left: 0;
+  background: #000000;
+  overflow: hidden;
+  z-index: 1;
+}
+.background li {
+  position: absolute;
+  list-style: none;
+  width: 12px; /* Increased size */
+  height: 12px; /* Increased size */
+  background: #d00000;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(205, 0, 0, 0.8); /* Increased shadow */
+  cursor: pointer;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  animation: twinkle 2s ease-in-out infinite;
+}
+
+.background li:nth-child(4n + 1) {
+  animation: twinkle 2s ease-in-out infinite;
+}
+
+.background li:nth-child(4n + 2) {
+  animation: twinkle 2.5s ease-in-out infinite;
+}
+
+.background li:nth-child(4n + 3) {
+  animation: twinkle 3s ease-in-out infinite;
+}
+
+.background li:nth-child(4n + 4) {
+  animation: twinkle 1.5s ease-in-out infinite;
+}
+
+.background li:hover {
+  transform: scale(1.5);
+  box-shadow: 0 0 30px rgb(202, 13, 13); /* Increased shadow */
+}

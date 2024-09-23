@@ -1,0 +1,81 @@
+/* RadarMap.css */
+
+#map-container {
+  width: 80%;
+  height: 500px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#map {
+  height: 100%;
+  width: 100%;
+}
+
+.popup-content {
+  background-color: #007bff; /* Blue background */
+  color: #ffffff; /* White text */
+  text-align: center;
+  padding: 10px; /* Add some padding for better spacing */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.popup-content:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.popup-content h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #ffffff; /* White text for the title */
+}
+
+.popup-content p {
+  margin: 5px 0 0;
+  font-size: 14px;
+}
+
+.popup-content .read-more-btn {
+  background-color: #0056b3; /* Darker blue for button */
+  color: #ffffff; /* White text for button */
+  border: none;
+  border-radius: 4px; /* Rounded corners for button */
+  padding: 8px 12px; /* Padding for button */
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px; /* Standard font size */
+  text-decoration: none; /* Remove underline from links if any */
+  margin-top: 10px; /* Margin to separate from content */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.popup-content .read-more-btn:hover {
+  background-color: #003d7a; /* Even darker blue on hover */
+  transform: translateY(-2px); /* Slightly lift button on hover */
+}
+
+.radar-autocomplete-input {
+  border: 1px solid var(--radar-gray3);
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: var(--radar-gray8);
+  font-size: 1rem;
+  font-weight: 400;
+  height: 2.25rem;
+  line-height: 1.5;
+  margin-bottom: 5px;
+  outline: none;
+  padding: .375rem .75rem .375rem 40px;
+  text-overflow: ellipsis;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+  width: 100%;
+}
+
+.radar-autocomplete-input:focus {
+  border-color: #007bff; /* Change border color on focus */
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.5); /* Add shadow on focus */
+}

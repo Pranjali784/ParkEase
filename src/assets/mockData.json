@@ -1,0 +1,81 @@
+{
+  "parkingLocations": [
+    {
+      "title": "Parking A",
+      "latitude": 12.82213,
+      "longitude": 80.04311,
+      "capacity": 20,
+      "distanceFromUser": 300,
+      "owner": "John Doe",
+      "vehicleType": "Car",
+      "timing": "8 AM - 8 PM (12 hours)",
+      "price": "$5/hour"
+    },
+    {
+      "title": "Parking B",
+      "latitude": 12.82300,
+      "longitude": 80.04600,
+      "capacity": 25,
+      "distanceFromUser": 500,
+      "owner": "Jane Smith",
+      "vehicleType": "Motorcycle",
+      "timing": "6 AM - 6 PM (12 hours)",
+      "price": "$4/hour"
+    },
+    {
+      "title": "Parking C",
+      "latitude": 12.82000,
+      "longitude": 80.04400,
+      "capacity": 30,
+      "distanceFromUser": 400,
+      "owner": "Mike Johnson",
+      "vehicleType": "Car",
+      "timing": "7 AM - 7 PM (12 hours)",
+      "price": "$6/hour"
+    },
+    {
+      "title": "Parking D",
+      "latitude": 12.82400,
+      "longitude": 80.04200,
+      "capacity": 15,
+      "distanceFromUser": 600,
+      "owner": "Emily Davis",
+      "vehicleType": "Bicycle",
+      "timing": "9 AM - 9 PM (12 hours)",
+      "price": "$3/hour"
+    },
+    {
+      "title": "Parking E",
+      "latitude": 12.81950,
+      "longitude": 80.04800,
+      "capacity": 35,
+      "distanceFromUser": 700,
+      "owner": "Sarah Wilson",
+      "vehicleType": "Car",
+      "timing": "8 AM - 10 PM (14 hours)",
+      "price": "$7/hour"
+    },
+    {
+      "title": "Parking F",
+      "latitude": 12.82500,
+      "longitude": 80.04500,
+      "capacity": 10,
+      "distanceFromUser": 550,
+      "owner": "Chris Brown",
+      "vehicleType": "Motorcycle",
+      "timing": "6 AM - 8 PM (14 hours)",
+      "price": "$4.50/hour"
+    },
+    {
+      "title": "Parking G",
+      "latitude": 12.81850,
+      "longitude": 80.04750,
+      "capacity": 40,
+      "distanceFromUser": 750,
+      "owner": "Alex White",
+      "vehicleType": "Car",
+      "timing": "24 Hours (24 hours)",
+      "price": "$10/day"
+    }
+  ]
+}
